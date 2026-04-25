@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-POP: The Global Phenomenon</title>
+    <meta name="description" content="Explore the vibrant world of K-pop, its history, global impact, and iconic artists. Discover the magic behind the music.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header id="hero">
+        <div class="hero-bg-text">PHENOMENON</div>
+        <div class="hero-content">
+            <h1><span class="gradient-text">K-POP</span><br>REVOLUTION</h1>
+            <p>전 세계를 사로잡은 다이내믹한 음악적 경험,<br>K-pop의 세계에 오신 것을 환영합니다.</p>
+        </div>
+        <div class="floating-circle circle-1"></div>
+        <div class="floating-circle circle-2"></div>
+    </header>
+
+    <!-- Introduction -->
+    <section id="about">
+        <h2 class="gradient-text">WHAT IS K-POP?</h2>
+        <p>K-pop은 단순히 한국의 대중음악을 넘어선 하나의 문화 현상입니다. 정교한 퍼포먼스, 독창적인 비주얼, 그리고 전 세계 팬덤과의 강력한 유대감을 바탕으로 현대 대중문화의 중심이 되었습니다.</p>
+        
+        <div class="grid">
+            <div class="card" id="feat-performance">
+                <img src="kpop_idols_performance_1777097368157.png" alt="K-pop idols performance">
+                <h3>DYNAMIC PERFORMANCE</h3>
+                <p>완벽하게 짜인 칼군무와 화려한 무대 연출은 K-pop만의 독보적인 강점입니다.</p>
+            </div>
+            <div class="card" id="feat-global">
+                <img src="kpop_lightstick_detail_1777097381854.png" alt="K-pop lightstick">
+                <h3>GLOBAL IMPACT</h3>
+                <p>언어의 장벽을 넘어 전 세계 차트를 휩쓸며 새로운 팝의 기준을 제시하고 있습니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Elements -->
+    <section id="elements">
+        <h2 class="gradient-text">THE MAGIC BEHIND</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>TRAINING SYSTEM</h3>
+                <p>수년간의 연습생 과정을 거쳐 탄생하는 완성도 높은 아티스트들. 보컬, 댄스, 연기 등 다방면의 재능을 연마합니다.</p>
+            </div>
+            <div class="card">
+                <h3>VISUAL STORYTELLING</h3>
+                <p>뮤직비디오와 컨셉을 통해 전달되는 깊이 있는 세계관(Universe)과 미학적 완성도는 팬들에게 몰입감을 선사합니다.</p>
+            </div>
+            <div class="card">
+                <h3>FANDOM CULTURE</h3>
+                <p>아티스트와 함께 성장하며 선한 영향력을 전파하는 전 세계적인 팬 커뮤니티는 K-pop의 가장 강력한 원동력입니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artists Section -->
+    <section id="artists">
+        <div class="section-header">
+            <h2 class="gradient-text">ICONIC ARTISTS</h2>
+            <p>K-pop의 황금기를 이끄는 전설적인 아티스트들을 소개합니다.</p>
+        </div>
+        <div class="artist-grid">
+            <div class="card artist-card bts-card" style="background-image: url('bts_image_1777098083488.png');">
+                <div class="artist-bg-glow"></div>
+                <h3>BTS</h3>
+                <p>21세기 팝 아이콘으로 불리며 전 세계에 희망과 위로의 메시지를 전하는 그룹.</p>
+            </div>
+            <div class="card artist-card bp-card" style="background-image: url('blackpink_image_1777098097607.png');">
+                <div class="artist-bg-glow"></div>
+                <h3>BLACKPINK</h3>
+                <p>독보적인 스타일과 카리스마로 글로벌 패션과 음악계를 주도하는 걸그룹.</p>
+            </div>
+            <div class="card artist-card nj-card" style="background-image: url('newjeans_image_1777098112187.png');">
+                <div class="artist-bg-glow"></div>
+                <h3>NewJeans</h3>
+                <p>신선한 음악적 시도와 자연스러운 매력으로 새로운 세대의 K-pop을 이끄는 아이콘.</p>
+            </div>
+            <div class="card artist-card sv-card" style="background-image: url('seventeen_image_1777098127293.png');">
+                <div class="artist-bg-glow"></div>
+                <h3>SEVENTEEN</h3>
+                <p>'자체 제작' 능력을 바탕으로 완벽한 퍼포먼스와 에너지를 선사하는 그룹.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 K-POP REVOLUTION. All rights reserved.</p>
+    </footer>
+
+    <!-- Simple Scroll Animation Script -->
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        document.querySelectorAll('.card').forEach((card) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'all 0.6s ease-out';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
